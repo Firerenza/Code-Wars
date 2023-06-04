@@ -1,21 +1,16 @@
-// <!-- 8 kyu
-// Find the smallest integer in the array
+// Alex just got a new hula hoop, he loves it but feels discouraged because his little brother is better than him
 
-// DESCRIPTION:
-// Given an array of integers your solution should find the smallest integer.
+// Write a program where Alex can input (n) how many times the hoop goes round and it will return him an encouraging message :)
 
-// For example:
+// If Alex gets 10 or more hoops, return the string "Great, now move on to tricks".
+// If he doesn't get 10 hoops, return the string "Keep at it until you get it".
 
-// Given [34, 15, 88, 2] your solution will return 2
-// Given [34, -345, -1, 100] your solution will return -345
-// You can assume, for the purpose of this kata, that the supplied array will not be empty.
-//  -->
 
 // <!-- my solution -->
 
-class SmallestIntegerFinder {
-    findSmallestInt(args) {
-      let sorted = args.sort((a,b) => a - b);
-      return sorted[0]
-    }
-  }
+function hoopCount (n) {
+  if (n > 9){
+return 'Great, now move on to tricks'}
+  else {
+return 'Keep at it until you get it'}
+}
